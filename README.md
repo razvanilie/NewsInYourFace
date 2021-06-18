@@ -9,7 +9,7 @@ Our project is developed using UiPath(UiPath + ReFramework to be more precise) t
 Also we have a bonus C# App which purpose is to be a 'man-in-the-middle' app that helps the user to start the robot giving him ways to configure the robot in many ways(choose which sites to be scrapped, choose how old the news have to be etc.) The app has been made using Microsoft Visual Studio so this is our second Building Tool.
 
 
-![c#app](https://i.imgur.com/2zV50f1.png)
+![c#app](https://i.imgur.com/QIQxkcK.png)
 
 # User Stories
 [Feedback and issues resolved](https://github.com/razvanilie/NewsInYourFace/issues) : We released a beta version 1.0 to a test group and we colected feedback and we solved and adressed every complain and issue.

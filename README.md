@@ -7,6 +7,8 @@ Our project is developed using UiPath(UiPath + ReFramework to be more precise) t
 ![uipath](https://i.imgur.com/2zV50f1.png)
 
 Also we have a bonus C# App which purpose is to be a 'man-in-the-middle' app that helps the user to start the robot giving him ways to configure the robot in many ways(choose which sites to be scrapped, choose how old the news have to be etc.) The app has been made using Microsoft Visual Studio so this is our second Building Tool.
+
+
 ![c#app](https://i.imgur.com/2zV50f1.png)
 
 # User Stories
@@ -32,3 +34,13 @@ WE ALSO SOLVED BUGS :heartpulse: :heartpulse: :heartpulse:
 1. [Some dates aren't formatted properly](https://github.com/razvanilie/NewsInYourFace/issues/3)
 2. [C# data validation](https://github.com/razvanilie/NewsInYourFace/issues/2)
 3. [techcrunch.com has a "Accept Cookies" window that blocks the robot](https://github.com/razvanilie/NewsInYourFace/issues/1)
+
+
+# Details
+Aplication created using UiPath 2021.4.4, 
+Programming language: VB.NET / C#
+CommandPrompt.Activities: [1.0.8]
+UiPath.Excel.Activities: [2.10.4]
+UiPath.System.Activities: [21.4.1]
+UiPath.UIAutomation.Activities: [21.4.4]
+

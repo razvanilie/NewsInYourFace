@@ -1,0 +1,258 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="cultivatedculture" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="maximumAge" Type="InArgument(x:Int32)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1190,2676</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>cultivatedculture_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="30">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Globalization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="27">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="cultivatedculture" sap:VirtualizedContainerService.HintSize="945,2611" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:String" Name="htmlCode" />
+      <Variable x:TypeArguments="x:Boolean" Name="noError" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser" sap:VirtualizedContainerService.HintSize="903,2519" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="89a20a9f52a1d95b4fe4fdd0f5cadf2d" Selector="&lt;html app='chrome.exe' title='*' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Attach browser" sap:VirtualizedContainerService.HintSize="869,2373" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="regexBlocks" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:AppendLine sap2010:Annotation.AnnotationText="Append Lines containing website title and newlines" DisplayName="Append Line" FileName="NewsFile.txt" sap:VirtualizedContainerService.HintSize="827,163" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[System.Environment.NewLine + System.Environment.NewLine + &quot;---cultivatedculture.com&quot; + System.Environment.NewLine + System.Environment.NewLine + System.Environment.NewLine]" UseDefaultEncoding="False">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:AppendLine>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="827,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Framework\HtmlDecoder.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_website">
+                  <Literal x:TypeArguments="x:String">https://cultivatedculture.com/blog/</Literal>
+                </InArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="out_HTML_code_decoded">
+                  <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="htmlCode" />
+                </OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:Matches BuilderPattern="(?s)(?&lt;=Evenimente si activitati&lt;\/h2&gt;)(.*?)(?=\&lt;\/body&gt;&lt;\/html&gt;)" sap:VirtualizedContainerService.HintSize="827,59" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[htmlCode]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?s)(?&lt;=Evenimente si activitati&lt;\\\/h2&gt;)(.*?)(?=\\&lt;\\\/body&gt;&lt;\\\/html&gt;)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?s)(?&lt;=RECENT POSTS)(.*?)(?=navigation)" RegexOption="IgnoreCase" Result="[regexBlocks]" />
+            <ui:Matches BuilderPattern="(?s)(?&lt;=Evenimente si activitati&lt;\/h2&gt;)(.*?)(?=\&lt;\/body&gt;&lt;\/html&gt;)" sap:VirtualizedContainerService.HintSize="827,59" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[regexBlocks(0).value]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?s)(?&lt;=Evenimente si activitati&lt;\\\/h2&gt;)(.*?)(?=\\&lt;\\\/body&gt;&lt;\\\/html&gt;)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[&quot;(?s)(?&lt;=&quot;&quot;post&quot;&quot;)(.*?)(?=&quot;&quot;col-)&quot;]" RegexOption="IgnoreCase" Result="[regexBlocks]" />
+            <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="827,1728" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[regexBlocks]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="section" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="For eacjh" sap:VirtualizedContainerService.HintSize="791,1595" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="regexLink" />
+                      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="regexTitle" />
+                      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="regexDate" />
+                      <Variable x:TypeArguments="x:String" Name="format" />
+                      <Variable x:TypeArguments="s:DateTime" Name="dateToAppendAsDate" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="749,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Boolean">[noError]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:Matches BuilderPattern="(?s)(?&lt;=Evenimente si activitati&lt;\/h2&gt;)(.*?)(?=\&lt;\/body&gt;&lt;\/html&gt;)" DisplayName="Link" sap:VirtualizedContainerService.HintSize="749,59" sap2010:WorkflowViewState.IdRef="Matches_3" Input="[section.ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?s)(?&lt;=Evenimente si activitati&lt;\\\/h2&gt;)(.*?)(?=\\&lt;\\\/body&gt;&lt;\\\/html&gt;)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[&quot;(?s)(?&lt;=href=&quot;&quot;)(.*?)(?=&quot;&quot;)&quot;]" RegexOption="IgnoreCase" Result="[regexLink]" />
+                    <ui:Matches BuilderPattern="(?s)(?&lt;=Evenimente si activitati&lt;\/h2&gt;)(.*?)(?=\&lt;\/body&gt;&lt;\/html&gt;)" DisplayName="Title" sap:VirtualizedContainerService.HintSize="749,59" sap2010:WorkflowViewState.IdRef="Matches_4" Input="[section.ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?s)(?&lt;=Evenimente si activitati&lt;\\\/h2&gt;)(.*?)(?=\\&lt;\\\/body&gt;&lt;\\\/html&gt;)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[&quot;(?s)(?&lt;=post-title&quot;&quot;&gt;)(.*?)(\/a)&quot;]" RegexOption="IgnoreCase" Result="[regexTitle]" />
+                    <ui:Matches BuilderPattern="(?s)(?&lt;=Evenimente si activitati&lt;\/h2&gt;)(.*?)(?=\&lt;\/body&gt;&lt;\/html&gt;)" DisplayName="Title 2" sap:VirtualizedContainerService.HintSize="749,59" sap2010:WorkflowViewState.IdRef="Matches_5" Input="[regexTitle(0).value]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?s)(?&lt;=Evenimente si activitati&lt;\\\/h2&gt;)(.*?)(?=\\&lt;\\\/body&gt;&lt;\\\/html&gt;)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[&quot;(?s)(?&lt;=&quot;&quot;&gt;)(.*?)(?=&lt;\/a)&quot;]" RegexOption="IgnoreCase" Result="[regexTitle]" />
+                    <ui:Matches BuilderPattern="(?s)(?&lt;=Evenimente si activitati&lt;\/h2&gt;)(.*?)(?=\&lt;\/body&gt;&lt;\/html&gt;)" DisplayName="Date" sap:VirtualizedContainerService.HintSize="749,59" sap2010:WorkflowViewState.IdRef="Matches_6" Input="[section.ToString]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;(?s)(?&lt;=Evenimente si activitati&lt;\\\/h2&gt;)(.*?)(?=\\&lt;\\\/body&gt;&lt;\\\/html&gt;)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[&quot;(?s)(?&lt;=&quot;&quot;date&quot;&quot;&gt;)(.*?)(?=&lt;)&quot;]" RegexOption="IgnoreCase" Result="[regexDate]" />
+                    <Assign sap:VirtualizedContainerService.HintSize="749,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[format]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">["MMMM dd, yyyy"]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="749,291" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                      <TryCatch.Try>
+                        <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="s:DateTime">[dateToAppendAsDate]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="s:DateTime">[DateTime.ParseExact(regexDate(0).value.Trim(), format, new System.Globalization.CultureInfo("en-GB"))]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,129" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Boolean">[noError]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                    </TryCatch>
+                    <If Condition="[noError = True]" sap:VirtualizedContainerService.HintSize="749,445" sap2010:WorkflowViewState.IdRef="If_2">
+                      <If.Then>
+                        <If Condition="[DateDiff(DateInterval.Day, dateToAppendAsDate, DateAndTime.Now, FirstDayOfWeek.Monday) &lt;= maximumAge]" sap:VirtualizedContainerService.HintSize="713,269" sap2010:WorkflowViewState.IdRef="If_1">
+                          <If.Then>
+                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Framework\appendtotxt.xaml">
+                              <ui:InvokeWorkflowFile.Arguments>
+                                <InArgument x:TypeArguments="x:String" x:Key="in_title">
+                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="regexTitle(0).value" />
+                                </InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="in_link">
+                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="regexLink(0).value" />
+                                </InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="in_date">
+                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="dateToAppendAsDate.ToString(&quot;dd/MM/yyyy&quot;)" />
+                                </InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="in_site">
+                                  <Literal x:TypeArguments="x:String">cultivatedculture</Literal>
+                                </InArgument>
+                                <InArgument x:TypeArguments="x:Int64" x:Key="articleAge">
+                                  <mva:VisualBasicValue x:TypeArguments="x:Int64" ExpressionText="DateDiff(DateInterval.Day, dateToAppendAsDate, DateAndTime.Now, FirstDayOfWeek.Monday)" />
+                                </InArgument>
+                              </ui:InvokeWorkflowFile.Arguments>
+                            </ui:InvokeWorkflowFile>
+                          </If.Then>
+                          <If.Else>
+                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Framework\appendtotxt.xaml">
+                              <ui:InvokeWorkflowFile.Arguments>
+                                <InArgument x:TypeArguments="x:String" x:Key="in_title">
+                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="regexTitle(0).value" />
+                                </InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="in_link">
+                                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="regexLink(0).value" />
+                                </InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="in_date">
+                                  <Literal x:TypeArguments="x:String">Error</Literal>
+                                </InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="in_site">
+                                  <Literal x:TypeArguments="x:String">cultivatedculture</Literal>
+                                </InArgument>
+                                <InArgument x:TypeArguments="x:Int64" x:Key="articleAge">
+                                  <Literal x:TypeArguments="x:Int64" />
+                                </InArgument>
+                              </ui:InvokeWorkflowFile.Arguments>
+                            </ui:InvokeWorkflowFile>
+                          </If.Else>
+                        </If>
+                      </If.Then>
+                    </If>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="749,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[regexLink(0).value + regexTitle(0).value + System.Environment.NewLine + regexDate(0).value]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:BrowserScope>
+  </Sequence>
+</Activity>

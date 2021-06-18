@@ -1,0 +1,109 @@
+
+News updated in the last 33 days.
+
+
+---uipath.com
+
+
+
+Title: Key Takeaways from UiPath Live: The 21.4 Release Show
+Link: https://www.uipath.com/blog/uipath-live-21-4-release-show-key-takeaways
+Date: 14/06/2021 - 4 days old.
+
+
+
+Title: How Our Own Robots Gave Us Back 306,000 Hours
+Link: https://www.uipath.com/blog/how-uipath-robots-gave-us-back-306k-hours
+Date: Error
+
+
+
+Title: On Our Path to Automation for Good
+Link: https://www.uipath.com/blog/supporting-automation-for-good
+Date: Error
+
+
+
+Title: Get More Automation Value With AI: Your AI Playbook (Part 2)
+Link: https://www.uipath.com/blog/automation-value-ai-playbook
+Date: Error
+
+
+
+Title: IT Infrastructure's Surprising New Star: The Rise of the Citizen Developer
+Link: https://www.uipath.com/blog/rise-of-the-citizen-developer
+Date: Error
+
+
+
+Title: Is Your Automation Program Ready For AI? Your AI Playbook (Part 1)
+Link: https://www.uipath.com/blog/automation-program-ai-playbook
+Date: 24/05/2021 - 25 days old.
+
+
+
+Title: Enterprise-Scale Management and Governance of Your Automation Program
+Link: https://www.uipath.com/blog/enterprise-scale-management-governance-automation-program
+Date: 20/05/2021 - 29 days old.
+
+
+
+Title: Upgrades for All User Experiences from Everyday Business Users to Professional Developers
+Link: https://www.uipath.com/blog/upgraded-automation-user-experiences-across-organization
+Date: 20/05/2021 - 29 days old.
+
+
+
+Title: UiPath Platform: 21.4 Release
+Link: https://www.uipath.com/blog/introduction-21-4-release-fully-automated-enterprise
+Date: 20/05/2021 - 29 days old.
+
+
+
+Title: Rapid Expansion of Automation Cloud™
+Link: https://www.uipath.com/blog/rapid-expansion-of-automation-cloud
+Date: 20/05/2021 - 29 days old.
+
+
+
+Title: A New Chapter in Process Discovery: Reveal Your Most Impactful Automation Potential
+Link: https://www.uipath.com/blog/new-chapter-process-discovery
+Date: 20/05/2021 - 29 days old.
+
+
+
+Title: Automation Transcends Administrations: U.S. President’s FY22 Budget Proposal
+Link: https://www.uipath.com/blog/automation-in-us-president-fy22-budget-proposal
+Date: 12/05/2021 - 37 days old.
+
+
+
+Title: The Difference Between Personal & Business Workflow Automations (and Why You Need Both)
+Link: https://www.uipath.com/blog/personal-vs-business-workflow-automations
+Date: 10/05/2021 - 39 days old.
+
+
+
+Title: What to Consider Before Automating Your CNC Machines
+Link: https://www.uipath.com/blog/cnc-machine-automation
+Date: Error
+
+
+
+Title: What an Automation Partner Ecosystem Means & How It Helps You Achieve Success
+Link: https://www.uipath.com/blog/automation-partner-ecosystem
+Date: Error
+
+
+
+Title: Supporting OxygenforIndia
+Link: https://www.uipath.com/blog/supporting-oxygenforindia
+Date: Error
+
+
+
+Title: Inspiring Diversity in Tech Through Automation Education with UiPath & EY Foundation
+Link: https://www.uipath.com/blog/automation-education-inspiring-diversity-in-tech
+Date: 29/04/2021 - 50 days old.
+
+

@@ -1,0 +1,10 @@
+C:\Users\razvan\source\repos\MDS_Scraper\MDS_Scraper\bin\Debug\MDS_Scraper.exe.config
+C:\Users\razvan\source\repos\MDS_Scraper\MDS_Scraper\bin\Debug\MDS_Scraper.exe
+C:\Users\razvan\source\repos\MDS_Scraper\MDS_Scraper\bin\Debug\MDS_Scraper.pdb
+C:\Users\razvan\source\repos\MDS_Scraper\MDS_Scraper\obj\Debug\MDS_Scraper.csprojAssemblyReference.cache
+C:\Users\razvan\source\repos\MDS_Scraper\MDS_Scraper\obj\Debug\MDS_Scraper.MDS_MainForm.resources
+C:\Users\razvan\source\repos\MDS_Scraper\MDS_Scraper\obj\Debug\MDS_Scraper.Properties.Resources.resources
+C:\Users\razvan\source\repos\MDS_Scraper\MDS_Scraper\obj\Debug\MDS_Scraper.csproj.GenerateResource.cache
+C:\Users\razvan\source\repos\MDS_Scraper\MDS_Scraper\obj\Debug\MDS_Scraper.csproj.CoreCompileInputs.cache
+C:\Users\razvan\source\repos\MDS_Scraper\MDS_Scraper\obj\Debug\MDS_Scraper.exe
+C:\Users\razvan\source\repos\MDS_Scraper\MDS_Scraper\obj\Debug\MDS_Scraper.pdb

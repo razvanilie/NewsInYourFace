@@ -11,6 +11,13 @@ Also we have a bonus C# App which purpose is to be a 'man-in-the-middle' app tha
 
 ![c#app](https://i.imgur.com/QIQxkcK.png)
 
+
+# UML Diagram 
+
+
+![diagramdarnupreadiagram](https://i.imgur.com/Y3kYcAu.png)
+
+
 # User Stories
 [Feedback and issues resolved](https://github.com/razvanilie/NewsInYourFace/issues) : We released a beta version 1.0 to a test group and we colected feedback and we solved and adressed every complain and issue.
 
